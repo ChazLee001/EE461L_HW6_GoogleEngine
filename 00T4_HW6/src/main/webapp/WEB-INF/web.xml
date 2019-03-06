@@ -4,35 +4,43 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
   <servlet>
- 	
   	<servlet-name>sign</servlet-name>
-  	
   	<servlet-class>guestbook.SignGuestbookServlet</servlet-class>
-  	
   </servlet>
   
   <servlet-mapping>
- 
-  	
   	<servlet-name>sign</servlet-name>
   	<url-pattern>/sign</url-pattern>
-  	
   </servlet-mapping>
   
-   <servlet>
- 	
+   <servlet>	
   	<servlet-name>ofysign</servlet-name>
-  	
-  	<servlet-class>guestbook.OfySignGuestbookServlet</servlet-class>
-  	
+  	<servlet-class>guestbook.OfySignGuestbookServlet</servlet-class> 
   </servlet>
   
+  <servlet>
+  	<servlet-name>ofymail</servlet-name>
+  	<servlet-class>guestbook.MailServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>crong</servlet-name>
+  	<servlet-class>guestbook.CronServlet</servlet-class>
+  </servlet> 
+  
   <servlet-mapping>
- 
-  	
   	<servlet-name>ofysign</servlet-name>
-  	<url-pattern>/ofysign</url-pattern>
-  	
+  	<url-pattern>/ofysign</url-pattern>	
+  </servlet-mapping>
+      	
+  <servlet-mapping>
+  	<servlet-name>ofymail</servlet-name> 
+  	<url-pattern>/ofymail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>crong</servlet-name>
+  	<url-pattern>/crong</url-pattern>	
   </servlet-mapping>
   
   <filter>

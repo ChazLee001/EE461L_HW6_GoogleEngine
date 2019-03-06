@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/crong</url>
+    <target>beta</target>
+   	<description>every minute summary job</description>
+   	<schedule>every 1 minutes</schedule>
+  </cron>
+</cronentries>

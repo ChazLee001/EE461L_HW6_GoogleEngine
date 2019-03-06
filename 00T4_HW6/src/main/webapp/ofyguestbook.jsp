@@ -106,6 +106,11 @@ to include your name with greetings you post.</p>
       <div><input type="submit" value="Post Greeting" /></div>
       <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
     </form>-->
- 
+ 	
+ 	<form action="/ofymail" method="get">
+      <div><input type="submit" value="mail" /></div>
+      <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
+    </form>
+ 	
   </body>
 </html>
