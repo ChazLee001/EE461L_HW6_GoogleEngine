@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/crong</url>
+    <target>beta</target>
+   	<description>every day summary job</description>
+   	<schedule>every day 17:00</schedule>
+   	<timezone>America/Mexico_City</timezone>
+  </cron>
+</cronentries>
